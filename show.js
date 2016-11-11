@@ -34,9 +34,15 @@ function showAsIs() {
   if(now("#docs-chrome") == "none") { 
     location.reload(); 
   } else { 
-    off("#docs-chrome"); off("#punch-explore-widget"); off(".filmstrip"); 
+    off("#docs-chrome"); off(".filmstrip"); 
     bg(".panel-right"); bg("#workspace-container"); 
-    del("#speakernotes"); del("#speakernotes-dragger"); del(".punch-theme-sidebar"); del(".docs-explore-sidebar-title"); 
+    del("#speakernotes"); del("#speakernotes-dragger"); 
+
+    // owner
+    if(document.getElementById("punch-explore-widget")) {
+      off("#punch-explore-widget");
+      del(".punch-theme-sidebar"); del(".docs-explore-sidebar-title");
+    } 
    
     // full screen
     chrome.runtime.sendMessage({cmd: "fullscreen"});

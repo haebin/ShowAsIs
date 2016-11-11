@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "ShowAsIs",
   "description": "Google Slide has CJK font issue; What You See Is NOT What You Get in presentation mode.",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "icons": {
     "128": "images/show_128.png",
     "48": "images/show_48.png",
