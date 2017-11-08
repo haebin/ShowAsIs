@@ -11,7 +11,7 @@ function addShowAsIs(evt) {
   showButton.innerHTML = "Show As Is";
   showButton.className = "goog-inline-block jfk-button jfk-button-action docs-titlebar-button";
   showButton.addEventListener("click", showAsIs);
-  var anchor = document.getElementById("punch-start-presentation-left");
+  var anchor = document.getElementsByClassName("punch-start-presentation-container")[0];
   document.getElementsByClassName("docs-titlebar-buttons")[0].insertBefore(showButton, anchor);
 }
 
